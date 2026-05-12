@@ -1,0 +1,151 @@
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    background-image: url('uploads/background 2.jpg'); /* Ensure the image path is correct */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Stack the content vertically */
+}
+
+/* Container for Profile Page */
+.container {
+    width: 100%;
+    max-width: 900px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Heading Styles */
+h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Profile Form Styles */
+.profile-details {
+    text-align: left;
+    margin-top: 20px;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Labels and Inputs */
+label {
+    font-size: 16px;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Button below the form */
+    margin-bottom: 20px; /* Add space below the Update Profile button */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Error Message */
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Button Styles */
+.button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    text-align: center; /* Ensure text is centered */
+    box-sizing: border-box; /* Include padding in width calculation */
+    margin-top: 20px; /* Space above the Back to home page button */
+}
+
+.button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Logout Button */
+.home-button {
+    width: 100%; /* Ensure the container is 100% width */
+    padding: 10px 0; /* Add some padding to avoid overflow */
+}
+
+.home-button a {
+    display: block;
+    margin-top: 20px;
+    background-color: #e74c3c;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    text-align: center; /* Ensure text is centered */
+    box-sizing: border-box; /* Include padding in width calculation */
+    width: 100%; /* Make logout button full width */
+}
+
+.home-button a:hover {
+    background-color: #c0392b;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%; /* Ensure the back to home page button spans the full width */
+    }
+
+    .home-button a {
+        width: 100%;
+    }
+}

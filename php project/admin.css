@@ -1,0 +1,148 @@
+/* General Body Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #5d6263;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container for the Admin Dashboard */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styles */
+h1 {
+    color: #333;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+/* Button Styles */
+.btn {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    text-decoration: none;
+    margin: 10px 5px;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.btn.btn-danger {
+    background-color: #e74c3c;
+}
+
+.btn.btn-danger:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+}
+
+/* Profile Button Styling */
+.profile-link {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.profile-link .btn {
+    background-color: #6c757d;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.profile-link .btn:hover {
+    background-color: #5a6268;
+    transform: translateY(-2px);
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+table th,
+table td {
+    padding: 18px 20px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    color: #555;
+}
+
+table th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+table td {
+    background-color: #f9f9f9;
+}
+
+/* Hover Effect for Table Rows */
+table tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+table tr:hover {
+    background-color: #f2f2f2;
+}
+
+/* Product Image Styling */
+.product-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* Table Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    table th,
+    table td {
+        font-size: 12px;
+        padding: 12px 15px;
+    }
+
+    .product-image {
+        width: 60px;
+        height: 60px;
+    }
+
+    .profile-link .btn {
+        padding: 10px 20px;
+    }
+}
